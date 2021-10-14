@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/activity_margin"
+    android:orientation="vertical">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image"
+        android:src="@drawable/pet_template"
+        android:background="@android:color/darker_gray"
+        android:scaleType="centerCrop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:shapeAppearanceOverlay="@style/circularImage"/>
+    <LinearLayout
+        android:layout_toRightOf="@id/image"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:text="@string/hint_pet_name"
+            android:id="@+id/pet_name"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:text="@string/hint_pet_breed"
+            android:id="@+id/pet_breed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:layout_alignParentRight="true"
+        android:id="@+id/date"
+        android:layout_gravity="right"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:text="yyyy/MM/dd\nhh:mm aa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

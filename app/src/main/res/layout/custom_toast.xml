@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/ic_success"
+        android:id="@+id/toastImage"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginRight="8dp"
+        android:text="@string/editor_inset_pet_successful"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center"
+        android:id="@+id/toastText"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
